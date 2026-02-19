@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Edax Agency - Agencia de desarrollo web y aplicaciones móviles. Webs desde 499 soles y apps desde 499 dólares.">
+    <title>Edax Agency | Desarrollo Web y Apps</title>
+    <!-- Fonts: Syne for headers (Unique, artistic) + Inter for body (Clean) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Syne:wght@400;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body class="loading">
+
+    <!-- Background Elements -->
+    <div class="noise-overlay"></div>
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+
+    <!-- Navigation -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="#" class="logo">EDAX<span class="dot">.</span>AGENCY</a>
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav">
+                <a href="#servicios" class="nav-link"><span>01.</span> Soluciones</a>
+                <a href="#apps" class="nav-link"><span>02.</span> Apps Móviles</a>
+                <a href="#proceso" class="nav-link"><span>03.</span> Proceso</a>
+                <a href="#contacto" class="btn-cotizar">
+                    <span>Iniciar Proyecto</span>
+                    <i class="fas fa-arrow-right"></i>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="reveal-text">
+                        <span class="line">Desarrollo Digital</span>
+                        <span class="line indent">Sin Límites</span>
+                    </h1>
+                    <div class="hero-description reveal-delay">
+                        <p>No somos solo código. Creamos experiencias digitales que venden. Webs de alto impacto y apps
+                            multiplataforma desde Perú para el mundo.</p>
+                        <div class="hero-cta">
+                            <a href="#servicios" class="btn-primary">
+                                Ver Planes
+                                <div class="btn-bg"></div>
+                            </a>
+                            <a href="https://wa.me/51973282798?text=Hola,%20quisiera%20asesor%C3%ADa%20para%20un%20proyecto%20digital."
+                                target="_blank" class="btn-text">
+                                <i class="fab fa-whatsapp"></i> Hablar con un experto
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-scroll-indicator">
+                <span>Scroll</span>
+                <div class="line"></div>
+            </div>
+        </section>
+
+        <!-- Tech Marquee (Infinite Scroll) -->
+        <div class="marquee-section">
+            <div class="marquee-content">
+                <span>Flutter</span> <span class="separator">/</span>
+                <span>React Native</span> <span class="separator">/</span>
+                <span>Next.js</span> <span class="separator">/</span>
+                <span>Node.js</span> <span class="separator">/</span>
+                <span>Firebase</span> <span class="separator">/</span>
+                <span>UI/UX Design</span> <span class="separator">/</span>
+                <span>AWS</span> <span class="separator">/</span>
+                <span>Flutter</span> <span class="separator">/</span>
+                <span>React Native</span> <span class="separator">/</span>
+                <span>Next.js</span> <span class="separator">/</span>
+                <span>Node.js</span> <span class="separator">/</span>
+                <span>Firebase</span> <span class="separator">/</span>
+            </div>
+        </div>
+
+        <!-- Services Section (Bento Grid Layout) -->
+        <section id="servicios" class="services">
+            <div class="container">
+                <div class="section-header fade-in-up">
+                    <span class="subtitle">Nuestros Planes</span>
+                    <h2>Soluciones Web <br><span class="accent-text">Escalables</span></h2>
+                </div>
+
+                <div class="bento-grid">
+                    <!-- 1. Web Básica -->
+                    <div class="bento-card fade-in-up" style="transition-delay: 0.1s;">
+                        <div class="card-image"><img src="images/1.png" alt="Diseño Web Básica"></div>
+                        <div class="card-content">
+                            <h3>Web Básica Profesional</h3>
+                            <p>Tu carta de presentación al mundo. Diseño limpio, carga rápida y optimización SEO básica.
+                            </p>
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-label">Desde</span>
+                                    <span class="price">S/ 499</span>
+                                </div>
+                                <a href="javascript:void(0);"
+                                    onclick="openQuoteModal('Web Básica Profesional', 'S/ 499')" class="btn-whatsapp"><i
+                                        class="fab fa-whatsapp"></i> Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Tienda Virtual -->
+                    <div class="bento-card fade-in-up" style="transition-delay: 0.2s;">
+                        <div class="card-image"><img src="images/2.png" alt="Tienda Virtual E-commerce"></div>
+                        <div class="card-content">
+                            <h3>Tienda Virtual</h3>
+                            <p>Ventas 24/7. Pasarela de pagos, inventario y carrito.</p>
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-label">Desde</span>
+                                    <span class="price">S/ 699</span>
+                                </div>
+                                <a href="javascript:void(0);" onclick="openQuoteModal('Tienda Virtual', 'S/ 699')"
+                                    class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Agencia de Viajes -->
+                    <div class="bento-card fade-in-up" style="transition-delay: 0.3s;">
+                        <div class="card-image"><img src="images/3.png" alt="Página web Agencia de Viajes"></div>
+                        <div class="card-content">
+                            <h3>Agencia de Viajes</h3>
+                            <p>Catálogo de tours, reservas y galería de destinos.</p>
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-label">Desde</span>
+                                    <span class="price">S/ 899</span>
+                                </div>
+                                <a href="javascript:void(0);" onclick="openQuoteModal('Agencia de Viajes', 'S/ 899')"
+                                    class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 4. Restaurantes / Menú Digital -->
+                    <div class="bento-card fade-in-up" style="transition-delay: 0.4s;">
+                        <div class="card-image"><img src="images/4.png" alt="Menú Digital Restaurantes"></div>
+                        <div class="card-content">
+                            <h3>Menú Digital</h3>
+                            <p>Carta interactiva QR para restaurantes modernos.</p>
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-label">Desde</span>
+                                    <span class="price">S/ 699</span>
+                                </div>
+                                <a href="javascript:void(0);" onclick="openQuoteModal('Menú Digital', 'S/ 699')"
+                                    class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 5. Hoteles -->
+                    <div class="bento-card fade-in-up" style="transition-delay: 0.5s;">
+                        <div class="card-image"><img src="images/5.png" alt="Diseño Web Hoteles"></div>
+                        <div class="card-content">
+                            <h3>Hoteles</h3>
+                            <p>Muestra habitaciones y servicios con estilo.</p>
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-label">Desde</span>
+                                    <span class="price">S/ 799</span>
+                                </div>
+                                <a href="javascript:void(0);" onclick="openQuoteModal('Hoteles', 'S/ 799')"
+                                    class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 6. Inmobiliaria -->
+                    <div class="bento-card fade-in-up" style="transition-delay: 0.6s;">
+                        <div class="card-image"><img src="images/6.png" alt="Página web Inmobiliaria"></div>
+                        <div class="card-content">
+                            <h3>Inmobiliaria</h3>
+                            <p>Listado de propiedades con filtros avanzados, mapa y contacto directo.</p>
+                            <div class="card-footer">
+                                <div class="price-container">
+                                    <span class="price-label">Desde</span>
+                                    <span class="price">S/ 799</span>
+                                </div>
+                                <a href="javascript:void(0);" onclick="openQuoteModal('Inmobiliaria', 'S/ 799')"
+                                    class="btn-whatsapp"><i class="fab fa-whatsapp"></i> Cotizar</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="custom-cta-container fade-in-up active" style="text-align: center; margin-top: 60px;">
+                    <p style="margin-bottom: 20px; color: var(--text-secondary); font-size: 1.1rem;">¿Tienes una idea
+                        específica?</p>
+                    <a href="javascript:void(0);" onclick="openQuoteModal('Proyecto a Medida', '')" class="btn-primary"
+                        style="display: inline-flex; align-items: center; gap: 10px;">
+                        Cotizar A Medida
+                        <i class="fas fa-arrow-right"></i>
+                        <div class="btn-bg"></div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Apps Section -->
+        <section id="apps" class="apps-section">
+            <div class="container">
+                <div class="apps-grid">
+                    <div class="apps-info fade-in-left">
+                        <span class="badge-new">Alta Demanda</span>
+                        <h2>Apps Nativas<br>Multiplataforma</h2>
+                        <p class="section-desc">Desarrollamos una sola vez, desplegamos en <strong>Android</strong> y
+                            <strong>iOS</strong>. Ahorra tiempo y dinero con tecnologías Flutter o React Native.
+                        </p>
+
+                        <div class="pricing-card-dark">
+                            <div class="price-header">
+                                <span class="currency">$</span>
+                                <span class="amount">499</span>
+                                <span class="period">/ proyecto base</span>
+                            </div>
+                            <ul class="check-list">
+                                <li><i class="fas fa-check"></i> Diseño UI/UX Personalizado</li>
+                                <li><i class="fas fa-check"></i> Panel de Administración</li>
+                                <li><i class="fas fa-check"></i> Publicación en Tiendas</li>
+                                <li><i class="fas fa-check"></i> Funciona en iOS y Android</li>
+                            </ul>
+                            <a href="javascript:void(0);" onclick="openQuoteModal('App Móvil Nativa', '$ 499')"
+                                class="btn-primary full-width">
+                                Cotizar App Ahora
+                                <div class="btn-bg"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="apps-visual fade-in-right">
+                        <div class="phone-wrapper">
+                            <div class="phone-frame">
+                                <div class="phone-screen">
+                                    <!-- Abstract UI -->
+                                    <div class="ui-header"></div>
+                                    <div class="ui-grid">
+                                        <div class="ui-item"></div>
+                                        <div class="ui-item"></div>
+                                        <div class="ui-item"></div>
+                                        <div class="ui-item"></div>
+                                    </div>
+                                    <div class="ui-chart"></div>
+                                    <div class="floating-notif notif-1">
+                                        <i class="fab fa-apple"></i> App Store Approved
+                                    </div>
+                                    <div class="floating-notif notif-2">
+                                        <i class="fab fa-google-play"></i> Play Store Live
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trust / Educational Section -->
+        <section id="confianza" class="trust-section">
+            <div class="container">
+                <div class="trust-header fade-in-up">
+                    <span class="trust-badge"><i class="fab fa-youtube"></i> Edax Edu Perú</span>
+                    <h2>Transparencia y <span class="accent-text">Educación</span></h2>
+                    <p class="section-desc">
+                        No solo vendemos servicios, enseñamos cómo se hacen. Rompemos la desconfianza compartiendo
+                        nuestro conocimiento contigo.
+                    </p>
+                    <a href="https://www.youtube.com/@EdaxeduPer%C3%BA" target="_blank" class="channel-btn">
+                        Ver canal completo <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+
+                <div class="video-carousel-container fade-in-up">
+                    <div class="video-carousel">
+
+                        <!-- Video 1 -->
+                        <div class="video-card" onclick="openVideoModal('nlr7uz_KvGc')">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/nlr7uz_KvGc/hqdefault.jpg"
+                                    alt="Creando tienda para bodega">
+                                <div class="play-overlay"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="video-info">
+                                <h4>Como crear tienda para Bodega</h4>
+                                <p><i class="far fa-eye"></i> Ver tutorial</p>
+                            </div>
+                        </div>
+
+                        <!-- Video 2 -->
+                        <div class="video-card" onclick="openVideoModal('jbGrMNEns2g')">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/jbGrMNEns2g/hqdefault.jpg"
+                                    alt="Menús digitales para restaurantes">
+                                <div class="play-overlay"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="video-info">
+                                <h4>Menús Digitales para Restaurantes</h4>
+                                <p><i class="far fa-eye"></i> Ver tutorial</p>
+                            </div>
+                        </div>
+
+                        <!-- Video 3 -->
+                        <div class="video-card" onclick="openVideoModal('F6EcUFsZQ5Q')">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/F6EcUFsZQ5Q/hqdefault.jpg"
+                                    alt="Crear App con Firebase Studio">
+                                <div class="play-overlay"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="video-info">
+                                <h4>Crear App Nativas con Firebase</h4>
+                                <p><i class="far fa-eye"></i> Ver tutorial</p>
+                            </div>
+                        </div>
+
+                        <!-- Video 4 -->
+                        <div class="video-card" onclick="openVideoModal('5LgIvLnZOm8')">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/5LgIvLnZOm8/hqdefault.jpg"
+                                    alt="Crear tienda para ropa">
+                                <div class="play-overlay"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="video-info">
+                                <h4>Crear Tienda Online de Ropa</h4>
+                                <p><i class="far fa-eye"></i> Ver tutorial</p>
+                            </div>
+                        </div>
+
+                        <!-- DUPLICATES FOR INFINITE SCROLL -->
+
+                        <!-- Video 1 (Duplicate) -->
+                        <div class="video-card" onclick="openVideoModal('nlr7uz_KvGc')">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/nlr7uz_KvGc/hqdefault.jpg"
+                                    alt="Creando tienda para bodega">
+                                <div class="play-overlay"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="video-info">
+                                <h4>Como crear tienda para Bodega</h4>
+                                <p><i class="far fa-eye"></i> Ver tutorial</p>
+                            </div>
+                        </div>
+
+                        <!-- Video 2 (Duplicate) -->
+                        <div class="video-card" onclick="openVideoModal('jbGrMNEns2g')">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/jbGrMNEns2g/hqdefault.jpg"
+                                    alt="Menús digitales para restaurantes">
+                                <div class="play-overlay"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="video-info">
+                                <h4>Menús Digitales para Restaurantes</h4>
+                                <p><i class="far fa-eye"></i> Ver tutorial</p>
+                            </div>
+                        </div>
+
+                        <!-- Video 3 (Duplicate) -->
+                        <div class="video-card" onclick="openVideoModal('F6EcUFsZQ5Q')">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/F6EcUFsZQ5Q/hqdefault.jpg"
+                                    alt="Crear App con Firebase Studio">
+                                <div class="play-overlay"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="video-info">
+                                <h4>Crear App Nativas con Firebase</h4>
+                                <p><i class="far fa-eye"></i> Ver tutorial</p>
+                            </div>
+                        </div>
+
+                        <!-- Video 4 (Duplicate) -->
+                        <div class="video-card" onclick="openVideoModal('5LgIvLnZOm8')">
+                            <div class="thumbnail-wrapper">
+                                <img src="https://img.youtube.com/vi/5LgIvLnZOm8/hqdefault.jpg"
+                                    alt="Crear tienda para ropa">
+                                <div class="play-overlay"><i class="fas fa-play"></i></div>
+                            </div>
+                            <div class="video-info">
+                                <h4>Crear Tienda Online de Ropa</h4>
+                                <p><i class="far fa-eye"></i> Ver tutorial</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="custom" class="custom-section">
+            <div class="container text-center">
+                <h2>¿Tienes una idea única?</h2>
+                <p>Desarrollamos software a medida, sistemas de gestión, plataformas educativas y más.</p>
+                <a href="https://wa.me/51973282798?text=Hola,%20tengo%20un%20proyecto%20especial%20a%20medida."
+                    class="btn-outline-large">
+                    Cotizar Proyecto Especial
+                </a>
+            </div>
+        </section>
+
+        <footer id="contacto" class="footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="footer-col">
+                        <a href="#" class="logo-footer">EDAX AGENCY</a>
+                        <p>Transformando el futuro digital de los negocios en Perú.</p>
+                    </div>
+                    <div class="footer-col">
+                        <h4>Contacto Directo</h4>
+                        <a href="https://wa.me/51973282798" class="contact-link"><i class="fab fa-whatsapp"></i> +51 973
+                            827 98</a>
+                        <a href="mailto:contacto@edax.agency" class="contact-link"><i class="far fa-envelope"></i>
+                            contacto@edax.agency</a>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Edax Agency. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Quote Modal -->
+    <div id="quoteModal" class="modal-overlay">
+        <div class="modal-content">
+            <button class="close-modal">&times;</button>
+            <div class="modal-header">
+                <h3>Cotizar Proyecto</h3>
+                <p>Cuéntanos tu idea y la haremos realidad.</p>
+            </div>
+
+            <form id="quoteForm">
+                <div class="form-group">
+                    <label for="clientName">Nombre Completo</label>
+                    <input type="text" id="clientName" placeholder="Tu nombre" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="projectDesc">Descripción del Proyecto</label>
+                    <textarea id="projectDesc" rows="4" placeholder="Describe detalladamente qué buscas realizar..."
+                        required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="clientBudget">Presupuesto Estimado</label>
+                    <input type="text" id="clientBudget" placeholder="Ej: S/ 1500" required>
+                </div>
+
+                <button type="submit" class="btn-submit">
+                    Enviar a WhatsApp <i class="fab fa-whatsapp"></i>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal-overlay">
+        <div class="modal-content video-modal-content">
+            <button class="close-modal" onclick="closeVideoModal()">&times;</button>
+            <div class="video-frame-container">
+                <iframe id="youtubeIframe" src="" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
